@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monisha Reddy | Web design student</title>
+  <meta name="description" content="Portfolio of Monisha Reddy, a web design student building responsive websites with HTML, CSS, JavaScript and Bootstrap.">
+  <meta name="theme-color" content="#2847C7">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Fonts (Lora for headings, Poppins for body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Step 6: external stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- ============ Step 3: navigation menu with hyperlinks ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Monisha Reddy</a>
+
+      <!-- Mobile menu without JavaScript: a hidden checkbox plus a label styled as a button -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Show or hide the menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HOME ============ -->
+    <section id="home" class="hero" aria-labelledby="home-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 id="home-title">Every web page is a stack of boxes. I'm learning to build them well.</h1>
+          <p>Hi, I'm Monisha Reddy, a web design student. I build responsive pages with HTML, CSS, JavaScript and Bootstrap, and I like it best when a layout looks right on a phone and on a big screen.</p>
+          <p class="hero-actions">
+            <a class="btn btn-primary" href="#projects">See my projects</a>
+            <a class="btn btn-secondary" href="#contact">Get in touch</a>
+          </p>
+        </div>
+
+        <!-- The CSS box model drawn with real margin, border and padding (hover it) -->
+        <figure class="boxmodel">
+          <div class="bm-stage">
+            <div class="bm bm-margin">
+              <div class="bm bm-border">
+                <div class="bm bm-padding">
+                  <div class="bm bm-content">
+                    <!-- Step 4: profile image (swap in your own photo, see README) -->
+                    <img src="images/profile.svg" alt="Portrait placeholder for Monisha Reddy" width="220" height="220">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>The CSS box model with my portrait in the content box. Hover over it to add space.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ME ============ -->
+    <section id="about" class="section section-white" aria-labelledby="about-title">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2 id="about-title">About me</h2>
+          <p>I'm a web design student learning to turn a plain page into something clear to read and pleasant to use. My favourite moment is when a layout finally clicks: the boxes line up, and the page still works on a phone.</p>
+          <p>This year I have been building small projects with HTML, CSS, JavaScript and Bootstrap, from a shared shopping cart to an online store landing page. I test every page at phone and desktop widths before I call it done.</p>
+
+          <h3>How I build a page</h3>
+          <ol class="steps">
+            <li>Plan the sections and sketch the layout.</li>
+            <li>Write the HTML structure and content.</li>
+            <li>Style it with CSS, starting with the phone layout.</li>
+            <li>Test on desktop and mobile, then fix what breaks.</li>
+          </ol>
+        </div>
+
+        <aside class="facts" aria-labelledby="facts-title">
+          <h3 id="facts-title">Quick facts</h3>
+          <ul class="fact-list">
+            <li><strong>Learning:</strong> HTML, CSS, JavaScript and Bootstrap</li>
+            <li><strong>Tools:</strong> VS Code, Git and GitHub</li>
+            <li><strong>Latest build:</strong> CartShare, a shared shopping cart for groups</li>
+            <li><strong>Find my code:</strong> <a href="https://github.com/Monisha11166">github.com/Monisha11166</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS (Step 5: table) ============ -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Skills</h2>
+        <p class="section-intro">What I use, what I have built with it, and how confident I feel.</p>
+
+        <table class="skills-table">
+          <caption class="visually-hidden">My skills, what I have used them for, and my confidence level</caption>
+          <thead>
+            <tr>
+              <th scope="col">Skill</th>
+              <th scope="col">What I have used it for</th>
+              <th scope="col">Confidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-label="Skill">HTML5</th>
+              <td data-label="Used for">Page structure, forms, tables and clear headings</td>
+              <td data-label="Confidence"><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span>Comfortable</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Skill">CSS3</th>
+              <td data-label="Used for">Flexbox layouts, responsive design, transitions and hover effects</td>
+              <td data-label="Confidence"><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span>Comfortable</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Skill">Bootstrap 5</th>
+              <td data-label="Used for">Grid, navbar, cards, carousel and offcanvas in an online store page</td>
+              <td data-label="Confidence"><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span>Comfortable</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Skill">JavaScript</th>
+              <td data-label="Used for">Cart logic, filtering products and form checks</td>
+              <td data-label="Confidence"><span class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></span>Learning</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Skill">Git and GitHub</th>
+              <td data-label="Used for">Saving my work, pushing projects and publishing them online</td>
+              <td data-label="Confidence"><span class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></span>Learning</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Skill">Responsive design</th>
+              <td data-label="Used for">Testing layouts on phone, tablet and desktop screens</td>
+              <td data-label="Confidence"><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span>Comfortable</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section section-white" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+        <p class="section-intro">Three things I have built, newest first.</p>
+
+        <article class="project">
+          <figure class="project-shot">
+            <img src="images/project-sundry.jpg" alt="Screenshot of the Sundry online store showing a grid of product cards" width="1200" height="750" loading="lazy">
+          </figure>
+          <div class="project-body">
+            <h3>Sundry online store</h3>
+            <p>A landing page for a small home-goods store. Visitors filter and search products, add them to a cart, and watch a progress bar fill towards free shipping.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap 5</li>
+            </ul>
+            <!-- TODO: replace this link with the repository or live demo of the store once it is published -->
+            <p class="links"><a href="https://github.com/Monisha11166">See my code on GitHub</a></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <figure class="project-shot">
+            <img src="images/project-cartshare.jpg" alt="Screenshot of CartShare, a shared shopping cart with a free delivery progress bar" width="1200" height="750" loading="lazy">
+          </figure>
+          <div class="project-body">
+            <h3>CartShare</h3>
+            <p>A shared shopping cart for dorms, offices and travel groups. Everyone in a room adds items to one cart, changes show up in other browser tabs straight away, and the group can print a receipt.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap 5</li>
+            </ul>
+            <p class="links">
+              <a href="https://monisha11166.github.io/CartShare/">Open the live demo</a>
+              <a href="https://github.com/Monisha11166/CartShare">View the code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <figure class="project-shot">
+            <img src="images/project-portfolio.jpg" alt="Screenshot of this portfolio's home section with the box model diagram" width="1200" height="750" loading="lazy">
+          </figure>
+          <div class="project-body">
+            <h3>This portfolio</h3>
+            <p>The site you are reading. It uses only HTML and CSS: a Flexbox layout, a mobile menu with no JavaScript, and a box model diagram that grows when you hover over it.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>Flexbox</li>
+            </ul>
+            <!-- TODO: replace with the link to this portfolio's repository once it is published -->
+            <p class="links"><a href="https://github.com/Monisha11166">See my code on GitHub</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT (Step 5: form) ============ -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <div class="contact-info">
+          <h2 id="contact-title">Contact</h2>
+          <p>Have a project idea, a question about my work, or feedback on this site? Send me a message.</p>
+          <ul class="contact-list">
+            <!-- TODO: replace with your own email address -->
+            <li><strong>Email</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+            <li><strong>GitHub</strong> <a href="https://github.com/Monisha11166">github.com/Monisha11166</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#thanks" method="get">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="topic">What is this about?</label>
+            <select id="topic" name="topic">
+              <option value="project">A project idea</option>
+              <option value="work">Internship or job</option>
+              <option value="feedback">Feedback on my work</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" minlength="10" required></textarea>
+          </div>
+          <div class="field field-check">
+            <input type="checkbox" id="copy" name="copy" value="yes">
+            <label for="copy">Send me a copy of my message</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p id="thanks" class="form-thanks" role="status"><strong>Thanks for your message.</strong> This demo form does not send email yet, so please use the email link above.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Monisha Reddy. Built with HTML and CSS.</p>
+      <p><a href="#home">Back to top</a></p>
+    </div>
+  </footer>
+</body>
+</html>
